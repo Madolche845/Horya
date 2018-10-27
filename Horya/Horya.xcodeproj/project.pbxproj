@@ -17,6 +17,7 @@
 		04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F9F21843B9A008295CF /* MainTableViewController.swift */; };
 		04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FA221843DFF008295CF /* MainTableViewCell.swift */; };
 		04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FA721844895008295CF /* DetailsViewController.swift */; };
+		8ABC55E72184566B0016EF94 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		04DB7F9F21843B9A008295CF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		04DB7FA221843DFF008295CF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		04DB7FA721844895008295CF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				04DB7F6D218437D6008295CF /* AppDelegate.swift */,
 				04DB7F6F218437D6008295CF /* ViewController.swift */,
 				04DB7F71218437D6008295CF /* Main.storyboard */,
+				8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */,
 				04DB7F74218437D7008295CF /* Assets.xcassets */,
 				04DB7F76218437D7008295CF /* LaunchScreen.storyboard */,
 				04DB7F79218437D7008295CF /* Info.plist */,
@@ -283,6 +286,7 @@
 			files = (
 				04DB7F70218437D6008295CF /* ViewController.swift in Sources */,
 				04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */,
+				8ABC55E72184566B0016EF94 /* SearchTableViewController.swift in Sources */,
 				04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */,
 				04DB7F6E218437D6008295CF /* AppDelegate.swift in Sources */,
 				04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */,
