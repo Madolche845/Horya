@@ -14,6 +14,9 @@
 		04DB7F78218437D7008295CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DB7F76218437D7008295CF /* LaunchScreen.storyboard */; };
 		04DB7F83218437D7008295CF /* HoryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F82218437D7008295CF /* HoryaTests.swift */; };
 		04DB7F8E218437D7008295CF /* HoryaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F8D218437D7008295CF /* HoryaUITests.swift */; };
+		04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F9F21843B9A008295CF /* MainTableViewController.swift */; };
+		04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FA221843DFF008295CF /* MainTableViewCell.swift */; };
+		04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FA721844895008295CF /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		04DB7F89218437D7008295CF /* HoryaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoryaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DB7F8D218437D7008295CF /* HoryaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoryaUITests.swift; sourceTree = "<group>"; };
 		04DB7F8F218437D7008295CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DB7F9F21843B9A008295CF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		04DB7FA221843DFF008295CF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		04DB7FA721844895008295CF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		04DB7F61218437D6008295CF = {
 			isa = PBXGroup;
 			children = (
+				04DB7FA121843BC5008295CF /* Controller */,
 				04DB7F6C218437D6008295CF /* Horya */,
 				04DB7F81218437D7008295CF /* HoryaTests */,
 				04DB7F8C218437D7008295CF /* HoryaUITests */,
@@ -123,6 +130,24 @@
 				04DB7F8F218437D7008295CF /* Info.plist */,
 			);
 			path = HoryaUITests;
+			sourceTree = "<group>";
+		};
+		04DB7FA121843BC5008295CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DB7FA721844895008295CF /* DetailsViewController.swift */,
+				04DB7FA421843E0E008295CF /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DB7FA421843E0E008295CF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04DB7F9F21843B9A008295CF /* MainTableViewController.swift */,
+				04DB7FA221843DFF008295CF /* MainTableViewCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DB7F70218437D6008295CF /* ViewController.swift in Sources */,
+				04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */,
+				04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */,
 				04DB7F6E218437D6008295CF /* AppDelegate.swift in Sources */,
+				04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
