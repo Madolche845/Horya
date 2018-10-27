@@ -17,11 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-b1-loh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-b1-loh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="7Bo-b1-loh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SkF-SN-pbo"/>
+                            <constraint firstItem="7Bo-b1-loh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lJL-rP-E7M"/>
+                            <constraint firstItem="7Bo-b1-loh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ruI-cz-vxi"/>
+                            <constraint firstItem="7Bo-b1-loh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8N-qf-81W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
