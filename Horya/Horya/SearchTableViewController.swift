@@ -9,7 +9,7 @@
 import UIKit
 
 class SearchTableViewController: UITableViewController,UISearchResultsUpdating {
-    var array = ["ข่อย","เทพทาโร","ขิง","ดีปลี","ชะเอมเทศ","ขมิ้นขัน","เตมหอม"]
+    var array = ["ข่อย","เทพธาโร", "ขิง", "ดีปลี", "หมาก", "ตาลตะโหนด", "ตะไคร้", "หมากผู้หมากเมีย", "ชะเอมเทศ", "ว่านกาบหอย", "ขมิ้นชัน", "เตยหอม", "ข่า" ]
     var filteredArray = [String]()
     var searchController = UISearchController()
     var resultsController = UITableViewController()

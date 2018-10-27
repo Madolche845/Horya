@@ -11,7 +11,6 @@ import UIKit
 class MainTableViewCell: UITableViewCell {
     
     @IBOutlet var ImageOneView: UIImageView!
-    @IBOutlet var ImageTwoView: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var properties: UILabel!
 
