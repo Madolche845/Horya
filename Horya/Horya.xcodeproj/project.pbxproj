@@ -19,7 +19,6 @@
 		04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FA721844895008295CF /* DetailsViewController.swift */; };
 		04DB7FAC2184CC93008295CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FAB2184CC93008295CF /* SearchViewController.swift */; };
 		04DB7FAE2184CCE1008295CF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7FAD2184CCE1008295CF /* SearchTableViewCell.swift */; };
-		8ABC55E72184566B0016EF94 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		04DB7FA721844895008295CF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		04DB7FAB2184CC93008295CF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		04DB7FAD2184CCE1008295CF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +160,6 @@
 			children = (
 				04DB7FAB2184CC93008295CF /* SearchViewController.swift */,
 				04DB7FAD2184CCE1008295CF /* SearchTableViewCell.swift */,
-				8ABC55E62184566B0016EF94 /* SearchTableViewController.swift */,
 			);
 			path = SearchPage;
 			sourceTree = "<group>";
@@ -309,7 +306,6 @@
 				04DB7F70218437D6008295CF /* ViewController.swift in Sources */,
 				04DB7FAC2184CC93008295CF /* SearchViewController.swift in Sources */,
 				04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */,
-				8ABC55E72184566B0016EF94 /* SearchTableViewController.swift in Sources */,
 				04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */,
 				04DB7FAE2184CCE1008295CF /* SearchTableViewCell.swift in Sources */,
 				04DB7F6E218437D6008295CF /* AppDelegate.swift in Sources */,

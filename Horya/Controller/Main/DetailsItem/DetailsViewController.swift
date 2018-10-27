@@ -19,26 +19,25 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var Scientificname: UILabel!
     var ScientificName = ""
     
-    @IBOutlet weak var Properties: UILabel!
-    var properties = ""
-    
-    @IBOutlet weak var dataPropertiesOne: UILabel!
+   @IBOutlet weak var datasPropertiesOnes: UITextView!
     var DataPropertiesOne = ""
-    
-    @IBOutlet weak var dataPropertiesTwo: UILabel!
+
+    @IBOutlet weak var dataPeopertiesTwos: UITextView!
     var DataPropertiesTwo = ""
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.largeTitleDisplayMode = .never
         
-//        restaurantImageView.image = UIImage(named: restaurantImageName)
+        //Show Data To View
+        ImageView.image = UIImage(named: imageView)
         Name.text = name
-        Properties.text = properties
+        Scientificname.text = ScientificName
+        datasPropertiesOnes.text = DataPropertiesOne
+        dataPeopertiesTwos.text = DataPropertiesTwo
         
-        // Do any additional setup after loading the view.
     }
     
 }
