@@ -224,6 +224,9 @@
                                     <constraint firstAttribute="width" constant="30" id="SRd-YM-SeS"/>
                                 </constraints>
                                 <state key="normal" image="checkin-2"/>
+                                <connections>
+                                    <segue destination="zuP-H4-MhX" kind="show" id="l3M-NI-h01"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -452,6 +455,40 @@
             </objects>
             <point key="canvasLocation" x="524" y="842.42878560719646"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="sxp-ba-vqk">
+            <objects>
+                <viewController id="rRa-wV-i2Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSh-L6-I4V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-16-Lfm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SJ1-16-Lfm" firstAttribute="bottom" secondItem="CvT-L5-BKP" secondAttribute="bottom" id="0Xy-PL-E42"/>
+                            <constraint firstItem="SJ1-16-Lfm" firstAttribute="top" secondItem="CvT-L5-BKP" secondAttribute="top" id="GkY-G7-RKv"/>
+                            <constraint firstItem="SJ1-16-Lfm" firstAttribute="trailing" secondItem="CvT-L5-BKP" secondAttribute="trailing" id="ju9-oL-ujU"/>
+                            <constraint firstItem="SJ1-16-Lfm" firstAttribute="leading" secondItem="CvT-L5-BKP" secondAttribute="leading" id="lMa-g3-YGe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CvT-L5-BKP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xPa-Il-DQ3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="undo" id="N7L-kL-9pa">
+                            <connections>
+                                <segue destination="eLo-fI-dKS" kind="show" id="18i-aY-9Mh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="D9Y-7s-rby"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8Y-Fb-wQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962" y="153"/>
+        </scene>
         <!--Scan-->
         <scene sceneID="89x-tQ-G5R">
             <objects>
@@ -554,6 +591,24 @@
             </objects>
             <point key="canvasLocation" x="-276" y="154"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lDq-pf-Ld3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zuP-H4-MhX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KVt-3i-AvA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rRa-wV-i2Y" kind="relationship" relationship="rootViewController" id="Mhc-8P-KzM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ol-3i-NhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="154"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Home" width="30" height="30"/>
@@ -565,4 +620,8 @@
         <image name="herb1" width="501" height="450"/>
         <image name="market" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="l3M-NI-h01"/>
+        <segue reference="18i-aY-9Mh"/>
+    </inferredMetricsTieBreakers>
 </document>
