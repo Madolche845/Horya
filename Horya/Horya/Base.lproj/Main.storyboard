@@ -800,9 +800,10 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <scopeButtonTitles>
-                                        <string>All</string>
-                                        <string>Dog</string>
-                                        <string>Cat</string>
+                                        <string>ทั้งหมด</string>
+                                        <string>พืช</string>
+                                        <string>สัตว์</string>
+                                        <string>แร่ธาตุ</string>
                                     </scopeButtonTitles>
                                     <connections>
                                         <outlet property="delegate" destination="rZe-0a-3aF" id="bV9-oU-E5U"/>

@@ -12,8 +12,8 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
     @IBOutlet var table: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
-    var animalArray = [Animal]()
-    var currentAnimalArray = [Animal]() //update table
+    var herbArray = [Herb]()
+    var currentHerbArray = [Herb]() //update table
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +21,35 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
         setUpSearchBar()
         alterLayout()
     }
-    
+    // Add data in Array
     private func setUpAnimals() {
-        // CATS
-        animalArray.append(Animal(name: "Amber", category: .cat, image:"1"))
-        animalArray.append(Animal(name: "James", category: .cat, image:"2"))
-        animalArray.append(Animal(name: "Peter", category: .cat, image:"3"))
-        // DOGS
-        animalArray.append(Animal(name: "Haywood", category: .dog, image:"4"))
-        animalArray.append(Animal(name: "Shell", category: .dog, image:"5"))
-        animalArray.append(Animal(name: "James", category: .dog, image:"6"))
+        // plant
+        herbArray.append(Herb(name: "ข่อย", category: .plant, image:"1"))
+        herbArray.append(Herb(name: "เทพทาโร", category: .plant, image:"2"))
+        herbArray.append(Herb(name: "ขิง", category: .plant, image:"3"))
+        herbArray.append(Herb(name: "ดีปลี", category: .plant, image:"4"))
+        herbArray.append(Herb(name: "หมาก", category: .plant, image:"5"))
+        herbArray.append(Herb(name: "ตาลตะโหนด", category: .plant, image:"6"))
+        herbArray.append(Herb(name: "ตะไคร้", category: .plant, image:"7"))
+        herbArray.append(Herb(name: "หมากผู้หมากเมีย", category: .plant, image:"8"))
+        herbArray.append(Herb(name: "ขมิ้นชัน", category: .plant, image:"9"))
+        herbArray.append(Herb(name: "เตยหอม", category: .plant, image:"10"))
+        herbArray.append(Herb(name: "ข่า", category: .plant, image:"11"))
+        herbArray.append(Herb(name: "กระชาย", category: .plant, image:"12"))
+        herbArray.append(Herb(name: "ชะเอมเทศ", category: .plant, image:"13"))
+        herbArray.append(Herb(name: "ว่านกาบหอย", category: .plant, image:"14"))
+        herbArray.append(Herb(name: "ก้ามปูหลุด", category: .plant, image:"15"))
+        herbArray.append(Herb(name: "บานไม่รู้โรย", category: .plant, image:"16"))
         
-        currentAnimalArray = animalArray
+        // animal
+        herbArray.append(Herb(name: "เบี้ยผู้", category: .anm, image:"17"))
+        herbArray.append(Herb(name: "หอยสังข์", category: .anm, image:"18"))
+        
+        // mineral
+        herbArray.append(Herb(name: "ทองคำ", category: .mineral, image:"19"))
+        herbArray.append(Herb(name: "ดินประสิว", category: .mineral, image:"20"))
+        
+        currentHerbArray = herbArray
     }
     
     private func setUpSearchBar() {
@@ -41,27 +58,27 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
     
     func alterLayout() {
         table.tableHeaderView = UIView()
-        // search bar in section header
+        //        // search bar in section header
         table.estimatedSectionHeaderHeight = 50
-        // search bar in navigation bar
-        //navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
-        navigationItem.titleView = searchBar
-        searchBar.showsScopeBar = false // you can show/hide this dependant on your layout
-        searchBar.placeholder = "Search Animal by Name"
+        //        // search bar in navigation bar
+        //        //navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
+        //        navigationItem.titleView = searchBar
+        //        searchBar.showsScopeBar = false // you can show/hide this dependant on your layout
+        //        searchBar.placeholder = "Search Animal by Name"
     }
     
     // Table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentAnimalArray.count
+        return currentHerbArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? SearchTableViewCell else {
             return UITableViewCell()
         }
-        cell.nameLbl.text = currentAnimalArray[indexPath.row].name
-        cell.categoryLbl.text = currentAnimalArray[indexPath.row].category.rawValue
-        cell.imgView.image = UIImage(named:currentAnimalArray[indexPath.row].image)
+        cell.nameLbl.text = currentHerbArray[indexPath.row].name
+        cell.categoryLbl.text = currentHerbArray[indexPath.row].category.rawValue
+        cell.imgView.image = UIImage(named:currentHerbArray[indexPath.row].image)
         return cell
     }
     
@@ -70,49 +87,40 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
     }
     
     // This two functions can be used if you want to show the search bar in the section header
-    //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    //        return searchBar
-    //    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return searchBar
+    }
     
     //    // search bar in section header
-    //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    //        return UITableViewAutomaticDimension
-    //    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     
     // Search Bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        currentAnimalArray = animalArray.filter({ animal -> Bool in
-            switch searchBar.selectedScopeButtonIndex {
-            case 0:
-                if searchText.isEmpty { return true }
-                return animal.name.lowercased().contains(searchText.lowercased())
-            case 1:
-                if searchText.isEmpty { return animal.category == .dog }
-                return animal.name.lowercased().contains(searchText.lowercased()) &&
-                    animal.category == .dog
-            case 2:
-                if searchText.isEmpty { return animal.category == .cat }
-                return animal.name.lowercased().contains(searchText.lowercased()) &&
-                    animal.category == .cat
-            default:
-                return false
-            }
+        guard !searchText.isEmpty else {
+            currentHerbArray = herbArray
+            table.reloadData()
+            return
+        }
+        currentHerbArray = herbArray.filter({ animal -> Bool in
+            animal.name.lowercased().contains(searchText.lowercased())
         })
         table.reloadData()
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         switch selectedScope {
-        case 0:
-            currentAnimalArray = animalArray
-        case 1:
-            currentAnimalArray = animalArray.filter({ animal -> Bool in
-                animal.category == AnimalType.dog
-            })
-        case 2:
-            currentAnimalArray = animalArray.filter({ animal -> Bool in
-                animal.category == AnimalType.cat
-            })
+        case 0: currentHerbArray = herbArray
+        case 1: currentHerbArray = herbArray.filter({ (herb) -> Bool in
+            herb.category == HerbType.plant
+        })
+        case 2:currentHerbArray = herbArray.filter({ (herb) -> Bool in
+            herb.category == HerbType.anm
+        })
+        case 3:currentHerbArray = herbArray.filter({ (herb) -> Bool in
+            herb.category == HerbType.mineral
+        })
         default:
             break
         }
@@ -120,21 +128,21 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
     }
 }
 
-class Animal {
+class Herb {
     let name: String
     let image: String
-    let category: AnimalType
+    let category: HerbType
     
-    init(name: String, category: AnimalType, image: String) {
+    init(name: String, category: HerbType, image: String) {
         self.name = name
         self.category = category
         self.image = image
     }
 }
 
-enum AnimalType: String {
-    case cat = "Cat"
-    case dog = "Dog"
+enum HerbType: String {
+    case plant = "พืช"
+    case anm = "สัตว์"
+    case mineral = "แร่ธาตุ"
 }
-
 
