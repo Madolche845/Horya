@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A25CC92185055A00764E85 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A25CC82185055A00764E85 /* MapUIViewController.swift */; };
+		04A25CCD21850AAD00764E85 /* ShopoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A25CCC21850AAD00764E85 /* ShopoingTableViewCell.swift */; };
+		04A25CCF21850AF900764E85 /* ShopingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A25CCE21850AF900764E85 /* ShopingTableViewController.swift */; };
+		04A25CD22185118A00764E85 /* ShopDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A25CD12185118A00764E85 /* ShopDetailsViewController.swift */; };
+		04A25CD521851EA600764E85 /* PayMentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A25CD421851EA600764E85 /* PayMentViewController.swift */; };
 		04DB7F6E218437D6008295CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F6D218437D6008295CF /* AppDelegate.swift */; };
 		04DB7F70218437D6008295CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB7F6F218437D6008295CF /* ViewController.swift */; };
 		04DB7F73218437D6008295CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DB7F71218437D6008295CF /* Main.storyboard */; };
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A25CC82185055A00764E85 /* MapUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
+		04A25CCC21850AAD00764E85 /* ShopoingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopoingTableViewCell.swift; sourceTree = "<group>"; };
+		04A25CCE21850AF900764E85 /* ShopingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopingTableViewController.swift; sourceTree = "<group>"; };
+		04A25CD12185118A00764E85 /* ShopDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewController.swift; sourceTree = "<group>"; };
+		04A25CD421851EA600764E85 /* PayMentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMentViewController.swift; sourceTree = "<group>"; };
 		04DB7F6A218437D6008295CF /* Horya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DB7F6D218437D6008295CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DB7F6F218437D6008295CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +94,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A25CCA2185056800764E85 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				04A25CC82185055A00764E85 /* MapUIViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		04A25CCB21850A8500764E85 /* Shoping */ = {
+			isa = PBXGroup;
+			children = (
+				04A25CCE21850AF900764E85 /* ShopingTableViewController.swift */,
+				04A25CCC21850AAD00764E85 /* ShopoingTableViewCell.swift */,
+				04A25CD02185115100764E85 /* DetailsItem */,
+			);
+			path = Shoping;
+			sourceTree = "<group>";
+		};
+		04A25CD02185115100764E85 /* DetailsItem */ = {
+			isa = PBXGroup;
+			children = (
+				04A25CD12185118A00764E85 /* ShopDetailsViewController.swift */,
+			);
+			path = DetailsItem;
+			sourceTree = "<group>";
+		};
+		04A25CD321851E7D00764E85 /* PayMenet */ = {
+			isa = PBXGroup;
+			children = (
+				04A25CD421851EA600764E85 /* PayMentViewController.swift */,
+			);
+			path = PayMenet;
+			sourceTree = "<group>";
+		};
 		04DB7F61218437D6008295CF = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +185,9 @@
 			children = (
 				04DB7FA421843E0E008295CF /* Main */,
 				04DB7FA921846F66008295CF /* SearchPage */,
+				04A25CCA2185056800764E85 /* Map */,
+				04A25CCB21850A8500764E85 /* Shoping */,
+				04A25CD321851E7D00764E85 /* PayMenet */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -303,13 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A25CD22185118A00764E85 /* ShopDetailsViewController.swift in Sources */,
 				04DB7F70218437D6008295CF /* ViewController.swift in Sources */,
 				04DB7FAC2184CC93008295CF /* SearchViewController.swift in Sources */,
+				04A25CCF21850AF900764E85 /* ShopingTableViewController.swift in Sources */,
+				04A25CCD21850AAD00764E85 /* ShopoingTableViewCell.swift in Sources */,
 				04DB7FA021843B9A008295CF /* MainTableViewController.swift in Sources */,
 				04DB7FA321843DFF008295CF /* MainTableViewCell.swift in Sources */,
+				04A25CD521851EA600764E85 /* PayMentViewController.swift in Sources */,
 				04DB7FAE2184CCE1008295CF /* SearchTableViewCell.swift in Sources */,
 				04DB7F6E218437D6008295CF /* AppDelegate.swift in Sources */,
 				04DB7FA821844895008295CF /* DetailsViewController.swift in Sources */,
+				04A25CC92185055A00764E85 /* MapUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
