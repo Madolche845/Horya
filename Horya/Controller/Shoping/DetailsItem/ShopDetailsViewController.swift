@@ -10,6 +10,7 @@ import UIKit
 
 class ShopDetailsViewController: UIViewController {
     
+    //Get Data Details
     @IBOutlet var ImageOneView: UIImageView!
     var ImageOneViews = ""
     
@@ -63,7 +64,7 @@ class ShopDetailsViewController: UIViewController {
         }
     }
     
-    //function check accetp to pay 23
+    //function check accetp to payment
     @IBOutlet weak var ok: UIButton!
     @IBOutlet weak var accetpBtn: UIButton!
     var checkbox = "check"

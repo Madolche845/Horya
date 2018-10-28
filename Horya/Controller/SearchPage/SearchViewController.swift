@@ -58,13 +58,7 @@ class SearchViewController: UIViewController , UITableViewDataSource, UITableVie
     
     func alterLayout() {
         table.tableHeaderView = UIView()
-        //        // search bar in section header
         table.estimatedSectionHeaderHeight = 50
-        //        // search bar in navigation bar
-        //        //navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
-        //        navigationItem.titleView = searchBar
-        //        searchBar.showsScopeBar = false // you can show/hide this dependant on your layout
-        //        searchBar.placeholder = "Search Animal by Name"
     }
     
     // Table

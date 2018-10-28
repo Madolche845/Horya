@@ -63,7 +63,6 @@ class MainTableViewController: UITableViewController {
         "",
         "",
         ""]
-    //End Value Data Set Array -------------------------------------------------
     
     //Start Page Main
     override func viewDidLoad() {
@@ -73,7 +72,7 @@ class MainTableViewController: UITableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
     // MARK: - Table view data source

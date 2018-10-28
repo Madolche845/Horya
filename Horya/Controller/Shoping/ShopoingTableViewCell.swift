@@ -10,6 +10,7 @@ import UIKit
 
 class ShopoingTableViewCell: UITableViewCell {
 
+    //Setup Input View 
     @IBOutlet var ImageOneView: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var price: UILabel!

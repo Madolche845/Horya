@@ -10,6 +10,7 @@ import UIKit
 
 class ShopingTableViewController: UITableViewController {
 
+    //Data Set Array
     var image = ["กระวานดำ", "จันทร์เทศ", "เถาสะค้าน", "ลูกกระวาน", "หญ้าฝรั่น"]
     
     var name = ["กระวานดำ", "จันทร์เทศ", "เขาสะค้าน", "ลูกกระวาน", "หญ้าฝรั่น"]

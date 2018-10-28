@@ -10,6 +10,7 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    //Get Data Details
     @IBOutlet var ImageView: UIImageView!
     var imageView = ""
     
@@ -25,7 +26,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var dataPeopertiesTwos: UITextView!
     var DataPropertiesTwo = ""
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

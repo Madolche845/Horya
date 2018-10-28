@@ -10,6 +10,7 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
     
+    //Show Data To View
     @IBOutlet var ImageOneView: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var properties: UILabel!

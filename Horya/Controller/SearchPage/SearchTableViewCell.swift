@@ -10,9 +10,11 @@ import UIKit
 
 class SearchTableViewCell: UITableViewCell {
 
+    //Setup Input View 
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var nameLbl: UILabel!
     @IBOutlet var categoryLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

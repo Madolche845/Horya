@@ -10,27 +10,10 @@ import UIKit
 
 class MapUIViewController: UIViewController {
 
-    var imageView = ""
-    
-    var name = ""
-    
-    var ScientificName = ""
-    
-    var DataPropertiesOne = ""
-
-    var DataPropertiesTwo = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backpage(_ sender: Any) {
-        performSegue(withIdentifier: "nametest", sender: self)
-    }
-    
-    
-    
-
 }

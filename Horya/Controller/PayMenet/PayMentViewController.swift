@@ -9,6 +9,7 @@
 import UIKit
 
 class PayMentViewController: UIViewController {
+    //Get Data Details
     @IBOutlet weak var names: UILabel!
     var name = ""
     
@@ -22,16 +23,20 @@ class PayMentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let a = Int(pricebths)
-        let b = Int(price)
-        let c = Int(a!*b!)
+        Calculate()
+    }
+    
+    //Calculate To Product
+    func Calculate(){
+
+        let pricebth = Int(pricebths)
+        let prices = Int(price)
+        let SumPries = Int(pricebth!*prices!)
         
         names.text = name
         Coust.text = pricebths
-        sumcoust1.text = String(c)
-        sumcoust2.text = String(c)
+        sumcoust1.text = String(SumPries)
+        sumcoust2.text = String(SumPries)
     }
-    
-
 
 }
